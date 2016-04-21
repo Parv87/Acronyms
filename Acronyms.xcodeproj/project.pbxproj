@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24F9300E1CC965A400647DDA /* AcronymsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F9300D1CC965A400647DDA /* AcronymsService.m */; };
+		24F930111CC96CE400647DDA /* AcronymsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F930101CC96CE400647DDA /* AcronymsModel.m */; };
 		723A43D01CC8669400437664 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723A43CF1CC8669400437664 /* main.m */; };
 		723A43D31CC8669400437664 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723A43D21CC8669400437664 /* AppDelegate.m */; };
 		723A43D61CC8669400437664 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723A43D51CC8669400437664 /* ViewController.m */; };
 		723A43D91CC8669400437664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723A43D71CC8669400437664 /* Main.storyboard */; };
 		723A43DB1CC8669500437664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723A43DA1CC8669500437664 /* Assets.xcassets */; };
 		723A43DE1CC8669500437664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723A43DC1CC8669500437664 /* LaunchScreen.storyboard */; };
-		725072B91CC86FFB0057660D /* Acronyms.m in Sources */ = {isa = PBXBuildFile; fileRef = 725072B81CC86FFB0057660D /* Acronyms.m */; };
 		BAD54199E818043181726F5D /* libPods-Acronyms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E83386D287A55F3EF887133F /* libPods-Acronyms.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24F9300C1CC965A400647DDA /* AcronymsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymsService.h; sourceTree = "<group>"; };
+		24F9300D1CC965A400647DDA /* AcronymsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymsService.m; sourceTree = "<group>"; };
+		24F9300F1CC96CE400647DDA /* AcronymsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymsModel.h; sourceTree = "<group>"; };
+		24F930101CC96CE400647DDA /* AcronymsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymsModel.m; sourceTree = "<group>"; };
 		40DC428B99298261B0310037 /* Pods-Acronyms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acronyms/Pods-Acronyms.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE21515D63A0BC69F46A4E9 /* Pods-Acronyms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronyms.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acronyms/Pods-Acronyms.release.xcconfig"; sourceTree = "<group>"; };
 		723A43CB1CC8669400437664 /* Acronyms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acronyms.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +35,6 @@
 		723A43DA1CC8669500437664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723A43DD1CC8669500437664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723A43DF1CC8669500437664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		725072B71CC86FFB0057660D /* Acronyms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acronyms.h; sourceTree = "<group>"; };
-		725072B81CC86FFB0057660D /* Acronyms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acronyms.m; sourceTree = "<group>"; };
 		E83386D287A55F3EF887133F /* libPods-Acronyms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Acronyms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +59,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		24F930121CC96DDE00647DDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24F9300F1CC96CE400647DDA /* AcronymsModel.h */,
+				24F930101CC96CE400647DDA /* AcronymsModel.m */,
+				24F9300C1CC965A400647DDA /* AcronymsService.h */,
+				24F9300D1CC965A400647DDA /* AcronymsService.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24F930131CC96E2B00647DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				723A43D41CC8669400437664 /* ViewController.h */,
+				723A43D51CC8669400437664 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		723A43C21CC8669400437664 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +100,10 @@
 		723A43CD1CC8669400437664 /* Acronyms */ = {
 			isa = PBXGroup;
 			children = (
+				24F930121CC96DDE00647DDA /* Model */,
+				24F930131CC96E2B00647DDA /* Controller */,
 				723A43D11CC8669400437664 /* AppDelegate.h */,
 				723A43D21CC8669400437664 /* AppDelegate.m */,
-				723A43D41CC8669400437664 /* ViewController.h */,
-				723A43D51CC8669400437664 /* ViewController.m */,
-				725072B71CC86FFB0057660D /* Acronyms.h */,
-				725072B81CC86FFB0057660D /* Acronyms.m */,
 				723A43D71CC8669400437664 /* Main.storyboard */,
 				723A43DA1CC8669500437664 /* Assets.xcassets */,
 				723A43DC1CC8669500437664 /* LaunchScreen.storyboard */,
@@ -229,10 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F9300E1CC965A400647DDA /* AcronymsService.m in Sources */,
 				723A43D61CC8669400437664 /* ViewController.m in Sources */,
-				725072B91CC86FFB0057660D /* Acronyms.m in Sources */,
 				723A43D31CC8669400437664 /* AppDelegate.m in Sources */,
 				723A43D01CC8669400437664 /* main.m in Sources */,
+				24F930111CC96CE400647DDA /* AcronymsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
