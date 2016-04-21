@@ -134,9 +134,11 @@
     [searchBar resignFirstResponder];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.dimBackground = YES;
+    
+    __weak ViewController *weakSelf = self;
     [[AcronymsManager sharedInstance] search:[searchBar text] withCompletionBlock:^(NSArray *items, NSString *message) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        [self update:items withMessage:message];
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+        [weakSelf update:items withMessage:message];
     }];
     
 }
